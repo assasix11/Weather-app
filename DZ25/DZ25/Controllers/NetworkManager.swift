@@ -13,7 +13,12 @@ class NetworkManager<T: Codable> {
         if (url != nil) {
             string = url!
         }
-        guard let url = URL(string: string) else { return }
+        print(string)
+        guard let url = URL(string: string) else {
+            print(URL(string: string))
+            print("invalid url")
+            return
+        }
         let request = URLRequest(url: url)
         let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {
