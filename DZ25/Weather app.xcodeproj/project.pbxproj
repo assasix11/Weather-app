@@ -46,7 +46,7 @@
 		FEA7D4CC269631DE009770AA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FEAB5D902688FC96005AC295 /* collectiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectiCollectionViewCell.swift; sourceTree = "<group>"; };
 		FEAB5D912688FC96005AC295 /* collectiCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = collectiCollectionViewCell.xib; sourceTree = "<group>"; };
-		FED73A6A2675ECF6001FEE29 /* DZ25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZ25.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED73A6A2675ECF6001FEE29 /* Weather app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED73A6D2675ECF6001FEE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FED73A6F2675ECF6001FEE29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FED73A712675ECF6001FEE29 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		FED73A6B2675ECF6001FEE29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FED73A6A2675ECF6001FEE29 /* DZ25.app */,
+				FED73A6A2675ECF6001FEE29 /* Weather app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FED73A692675ECF6001FEE29 /* DZ25 */ = {
+		FED73A692675ECF6001FEE29 /* Weather app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FED73A7E2675ECF9001FEE29 /* Build configuration list for PBXNativeTarget "DZ25" */;
+			buildConfigurationList = FED73A7E2675ECF9001FEE29 /* Build configuration list for PBXNativeTarget "Weather app" */;
 			buildPhases = (
 				FED73A662675ECF6001FEE29 /* Sources */,
 				FED73A672675ECF6001FEE29 /* Frameworks */,
@@ -167,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = DZ25;
+			name = "Weather app";
 			productName = DZ25;
-			productReference = FED73A6A2675ECF6001FEE29 /* DZ25.app */;
+			productReference = FED73A6A2675ECF6001FEE29 /* Weather app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FED73A652675ECF6001FEE29 /* Build configuration list for PBXProject "DZ25" */;
+			buildConfigurationList = FED73A652675ECF6001FEE29 /* Build configuration list for PBXProject "Weather app" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -199,7 +199,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FED73A692675ECF6001FEE29 /* DZ25 */,
+				FED73A692675ECF6001FEE29 /* Weather app */,
 			);
 		};
 /* End PBXProject section */
@@ -422,7 +422,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FED73A652675ECF6001FEE29 /* Build configuration list for PBXProject "DZ25" */ = {
+		FED73A652675ECF6001FEE29 /* Build configuration list for PBXProject "Weather app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FED73A7C2675ECF9001FEE29 /* Debug */,
@@ -431,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FED73A7E2675ECF9001FEE29 /* Build configuration list for PBXNativeTarget "DZ25" */ = {
+		FED73A7E2675ECF9001FEE29 /* Build configuration list for PBXNativeTarget "Weather app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FED73A7F2675ECF9001FEE29 /* Debug */,
