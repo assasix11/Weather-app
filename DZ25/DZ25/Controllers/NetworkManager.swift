@@ -15,7 +15,6 @@ class NetworkManager<T: Codable> {
         }
         print(string)
         guard let url = URL(string: string) else {
-            print(URL(string: string))
             print("invalid url")
             return
         }

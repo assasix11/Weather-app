@@ -27,6 +27,9 @@ extension MainScreenViewController : UITextFieldDelegate {
                 self.waiting.textColor = .green
                 self.buildInterface(thisCity: newCity)
                 self.manager.chosenCity = inputCity
+                self.forecastButton.isEnabled = true
+                self.forecastButton.backgroundColor = .systemYellow
+                self.forecastButton.setTitleColor(.black, for: .normal)
             }
         }
         DispatchQueue.global(qos: .userInitiated).async {
@@ -34,6 +37,7 @@ extension MainScreenViewController : UITextFieldDelegate {
         if let citiie = findedCity.first(where: { $0.name.lowercased() == inputCity }) {
                 DispatchQueue.main.async {
                    self.manager.myCity = citiie
+                    self.manager.chosenCity = citiie.name
                 }
             }
         }

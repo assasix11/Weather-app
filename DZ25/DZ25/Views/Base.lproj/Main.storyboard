@@ -30,8 +30,8 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" textContentType="address-level2"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moscow, Russia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLC-RR-Zyy">
-                                <rect key="frame" x="146" y="69" width="121" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moscow, Russia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLC-RR-Zyy">
+                                <rect key="frame" x="0.0" y="69" width="414" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -102,9 +102,9 @@
                                 <rect key="frame" x="361" y="120" width="16" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pre-DQ-Qsb">
-                                <rect key="frame" x="186" y="349" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pre-DQ-Qsb">
+                                <rect key="frame" x="0.0" y="349" width="414" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -141,9 +141,11 @@
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="xFv-45-XU1" id="NrV-Qo-rPX"/>
+                        <outlet property="descriptionLabel" destination="Pre-DQ-Qsb" id="EwN-HM-ZEi"/>
                         <outlet property="forecastButton" destination="cuW-YT-byS" id="dcb-wI-DSY"/>
                         <outlet property="humidity" destination="F40-U5-BqV" id="2Jn-8v-eHX"/>
                         <outlet property="icon" destination="AGI-9M-cqY" id="7WM-Ej-dDp"/>
+                        <outlet property="locationLabel" destination="pLC-RR-Zyy" id="Z5e-wV-dGA"/>
                         <outlet property="tempLabel" destination="BNC-kK-XBP" id="0ec-UI-2tt"/>
                         <outlet property="textFieldCity" destination="fgq-38-75s" id="T4l-fX-SOl"/>
                         <outlet property="waiting" destination="DCL-HU-G2b" id="9h7-uA-yl9"/>

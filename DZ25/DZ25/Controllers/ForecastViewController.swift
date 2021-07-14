@@ -24,7 +24,7 @@ class ForecastViewController: UIViewController {
         layout.itemSize = CGSize(width: forecastView.bounds.width/2 - 5, height: forecastView.bounds.width/2 - 5)
         forecastView.forecastCollectionView.collectionViewLayout = layout
         forecastView.forecastCollectionView.register(UINib(nibName: "collectiCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "forecastCell")
-        forecastView.cityName.text = (CityManager.cityManager.myCity?.name ?? "City") + ": " + "7 days weather forecast"
+        forecastView.cityName.text = (CityManager.cityManager.chosenCity ?? "City") + ": " + "7 days weather forecast"
         makeActivityIndicator()
     }
     func getDayOfWeek(_ today:String) -> Int? {
@@ -53,20 +53,20 @@ class ForecastViewController: UIViewController {
         view.addSubview(ai)
         var timerStop = 0
         let timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
-            guard self.manager.myCity != nil && self.manager.chosenCity != nil else {
-                return
-            }
             guard timerStop == 0 else { return }
-            if self.manager.myCity!.name.lowercased() == self.manager.chosenCity!.lowercased() {
-                reload()
-                timerStop = 1
-                ai.removeFromSuperview()
-                blurEffectView.removeFromSuperview()
+            if self.manager.myCity != nil && self.manager.chosenCity != nil {
+                if self.manager.myCity!.name.lowercased() == self.manager.chosenCity!.lowercased() {
+                    reload()
+                    timerStop = 1
+                    ai.removeFromSuperview()
+                    blurEffectView.removeFromSuperview()
+                }
             }
+  
         }
         func reload() {
             forecastView.forecastCollectionView.reloadData()
-            forecastView.cityName.text = (CityManager.cityManager.myCity?.name ?? "City") + ": " + "7 days weather forecast"
+            forecastView.cityName.text = (CityManager.cityManager.chosenCity ?? "City") + ": " + "7 days weather forecast"
         }
     }
 }

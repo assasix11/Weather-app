@@ -9,6 +9,7 @@ import Foundation
 
 class CityManager {
     static let cityManager = CityManager()
+    var isItLocation: Bool?
     var myCity: CityInList?
     var chosenCity: String?
     func parceTheCity() -> String {

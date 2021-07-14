@@ -101,11 +101,11 @@
 			children = (
 				FED73A8226760012001FEE29 /* NetworkManager.swift */,
 				FEA7D4CC269631DE009770AA /* LocationManager.swift */,
+				FE48BB9D268B6A8C00591AF2 /* CityManager .swift */,
 				FED73A712675ECF6001FEE29 /* MainScreenViewController.swift */,
 				FEDF13AE269238380003CEC2 /* extensionMainScreen.swift */,
 				FE8842A52688E1B900A044E0 /* ForecastViewController.swift */,
 				FE63E3E3268CD05A00B6DB16 /* extensionForecast.swift */,
-				FE48BB9D268B6A8C00591AF2 /* CityManager .swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
